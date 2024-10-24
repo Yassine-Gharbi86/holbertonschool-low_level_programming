@@ -6,12 +6,9 @@
  */
 int main(void)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
-{
-if (ch != 'e' && ch != 'q')
-putchar(ch);
-}
+char n;
+for (n = 'z'; n >= 'a'; --n)
+putchar(n);
 putchar('\n');
 return (0);
 }
