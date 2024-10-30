@@ -1,47 +1,39 @@
-#include <stdio.h>
+#include "stdio.h"
 /**
- * print_fizz_buzz - Prints the Fizz-Buzz sequence.
+ * main - Entry point of the FizzBuzz program.
  *
- * Prints the numbers from 1 to 100, followed by a new line.
- * For multiples of three, prints "Fizz" instead of the number.
- * For multiples of five, prints "Buzz" instead of the number.
- * For numbers which are multiples of both three and five, prints "FizzBuzz".
+ * Description: Prints the numbers from 1 to 100, replacing multiples of
+ * three with "Fizz," multiples of five with "Buzz," and multiples of
+ * both three and five with "FizzBuzz."
  *
- * Returns: void
- */
-void print_fizz_buzz(void)
-{
-int i;
-for (i = 1; i <= 100; i++)
-{
-if (i % 3 == 0 && i % 5 == 0)
-{
-printf("FizzBuzz ");
-}
-else if (i % 3 == 0)
-{
-printf("Fizz ");
-}
-else if (i % 5 == 0)
-{
-printf("Buzz ");
-}
-else
-{
-printf("%d ", i);
-}
-}
-printf("\n");
-}
-/**
- * main - Entry point
- *
- * Calls the print_fizz_buzz function to print the Fizz-Buzz sequence.
- *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-print_fizz_buzz();
+int i;
+for (i = 1 ; i <= 100 ; i++)
+{
+if (i % 3 == 0 && i % 5 == 0)
+{
+printf("FizzBuzz");
+}
+else if (i % 3 == 0)
+{
+printf("Fizz");
+}
+else if (i % 5 == 0)
+{
+printf("Buzz");
+}
+else
+{
+printf("%d", i);
+}
+if (i < 100)
+{
+printf(" ");
+}
+}
+printf("\n");
 return (0);
 }
