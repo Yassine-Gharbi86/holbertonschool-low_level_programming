@@ -23,7 +23,7 @@ j = (i + 1) / 2;
 while (j < i)
 {
 _putchar(str[j]);
-j++;    
+j++;
 }
 _putchar('\n');
 }
