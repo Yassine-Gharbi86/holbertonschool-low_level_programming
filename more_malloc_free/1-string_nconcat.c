@@ -16,8 +16,9 @@ size_t len1 = strlen(s1 ? s1 : "");
 size_t len2 = strlen(s2 ? s2 : "");
 size_t len_n = (n > len2) ? len2 : n;
 char *concat = malloc(len1 + len_n + 1);
-if (!concat) return NULL;
+if (!concat)
+return (NULL);
 strcpy(concat, s1);
 strncat(concat, s2, len_n);
-return concat;
+return (concat);
 }
