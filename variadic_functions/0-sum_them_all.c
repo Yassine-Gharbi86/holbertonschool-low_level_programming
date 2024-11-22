@@ -15,7 +15,11 @@ if (n == 0)
 return (0);
 va_start(args, n);
 for (i = 0; i < n; i++)
+{
+if (va_arg(args, int) == 0 && i < n - 1) 
+break;
 sum += va_arg(args, int);
+}
 va_end(args);
 return (sum);
 }
