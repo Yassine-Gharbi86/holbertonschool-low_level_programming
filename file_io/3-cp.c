@@ -34,11 +34,11 @@ ssize_t bytes_read, bytes_written;
 char buffer[1024];
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
 }
 source_fd = open(argv[1], O_RDONLY);
-dest_fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
+dest_fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 error_file(source_fd, dest_fd, argv);
 bytes_read = 1024;
 while (bytes_read == 1024)
