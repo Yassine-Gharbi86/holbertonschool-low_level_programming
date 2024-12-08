@@ -3,8 +3,8 @@
 
 /**
 * error_file - checks if files can be opened.
-* @source_fd: file descriptor for the source file.
-* @dest_fd: file descriptor for the destination file.
+* @source_fd: file descriptor of the source file.
+* @dest_fd: file descriptor of the destination file.
 * @argv: arguments vector.
 * Return: no return.
 */
@@ -22,10 +22,10 @@ exit(99);
 }
 }
 /**
-* main - check the code for Holberton School students.
+* main - copies the content from one file to another.
 * @argc: number of arguments.
 * @argv: arguments vector.
-* Return: Always 0.
+* Return: 0 on success, exits with error code otherwise.
 */
 int main(int argc, char *argv[])
 {
